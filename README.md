@@ -64,6 +64,30 @@ The analysis provides comparisons between penguin species. Our findings and figu
 
 ![Body mass versus flipper length](figures/mass_vs_flipper.png)
 
+## Additional Analysis: Species and Sex Distribution
+
+This analysis examines the distribution of male and female penguins within each species.
+
+We calculated:
+- Number of males and females per species.
+- Percentage of males and females within each species.
+- Differences in sex distribution between species.
+
+### Sex Distribution by Species
+
+![Species and Sex Distribution](figures/species_sex_distribution.png)
+
+### Percentage Distribution by Species
+
+![Species and Sex Percentage](figures/species_sex_percentage.png)
+
+### Findings
+
+- Adelie: 73 females and 73 males, equally distributed among observations with known sex.
+- Chinstrap: 34 females and 34 males, also equally distributed.
+- Gentoo: 58 females and 61 males, showing a slightly higher proportion of males.
+
+
 ## How to Run
 
 Install dependencies: pip install -r requirements.txt
