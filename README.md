@@ -11,9 +11,9 @@ This project analyzes the Palmer Penguins dataset using Python, Pandas and Matpl
 
 - Participant 1: Adonis José Pabuena García (owner) - https://github.com/AdoLIMITED
 - Participant 2: Adonis José Pabuena García (contributor) - https://github.com/apabuena-spec
-- Participant 2: [Name and GitHub username]
-- Participant 3: [Name and GitHub username]
+- Participant 3: Carlos Huertas Charriel (contributor) - https://github.com/CarlosHuertasCharriel
 - Participant 4: [Name and GitHub username]
+- Participant 5: [Name and GitHub username]
 
 ## Dataset
 
