@@ -11,9 +11,11 @@ This project analyzes the Palmer Penguins dataset using Python, Pandas and Matpl
 
 - Participant 1: Adonis José Pabuena García (owner) - https://github.com/AdoLIMITED
 - Participant 2: Adonis José Pabuena García (contributor) - https://github.com/apabuena-spec
-- Participant 3: Carlos Huertas Charriel (contributor) - https://github.com/CarlosHuertasCharriel
-- Participant 4: [Name and GitHub username]
+- Participant 2: Carlos Huertas Charriel (contributor) - https://github.com/CarlosHuertasCharriel
+- Participant 3: María Jimeno González (contributor) - https://github.com/mjimgon
 - Participant 5: [Name and GitHub username]
+- Participant 5: [Name and GitHub username]
+- Participant 6: [Name and GitHub username]
 
 ## Dataset
 
@@ -66,6 +68,10 @@ The analysis provides comparisons between penguin species. Our findings and figu
 
 ![Body mass versus flipper length](figures/mass_vs_flipper.png)
 
+### Boxplot Distribution
+
+![Boxplot Distribution](figures/box_plot.png)
+
 ## Additional Analysis: Species and Sex Distribution
 
 This analysis examines the distribution of male and female penguins within each species.
@@ -83,11 +89,16 @@ We calculated:
 
 ![Species and Sex Percentage](figures/species_sex_percentage.png)
 
+### Measurements Distribution by Species
+
+![Species and Sex Percentage](figures/PenguinMeasurementsbySpecies.png)
+
+
 ### Findings
 
 - Adelie: 73 females and 73 males, equally distributed among observations with known sex.
 - Chinstrap: 34 females and 34 males, also equally distributed.
-- Gentoo: 58 females and 61 males, showing a slightly higher proportion of males.
+- Gentoo: 58 females and 61 males, showing a slightly higher proportion of males. Gentoo penguins have the longest average flipper length and the highest average body mass, but the lowest average bill depth.
 
 
 ## How to Run
