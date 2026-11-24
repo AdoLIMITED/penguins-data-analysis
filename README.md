@@ -47,6 +47,8 @@ Our exploratory data analysis includes:
 5. Average body mass by species
 6. Histograms, bar charts and scatter plots
 7. Species and sex analysis 
+8. Island distribution and correlation analysis
+9. 
 
 ## Results
 
@@ -100,6 +102,26 @@ We calculated:
 - Chinstrap: 34 females and 34 males, also equally distributed.
 - Gentoo: 58 females and 61 males, showing a slightly higher proportion of males. Gentoo penguins have the longest average flipper length and the highest average body mass, but the lowest average bill depth.
 
+## Additional Analysis: Island Distribution and Correlations
+
+This analysis explores how penguin species are distributed across islands and evaluates the linear relationships between physical measurements.
+
+### Species Distribution by Island
+- **Gentoo** penguins are found exclusively on Biscoe Island (124 individuals, 73.8% of the island's sample).
+- **Chinstrap** penguins are found exclusively on Dream Island (68 individuals, 54.8%).
+- **Adelie** is the only species present across all three islands, accounting for 100% of Torgersen Island (52 individuals).
+
+![Species Distribution by Island](figures/species_by_island.png)
+
+### Correlation Matrix
+The strongest positive correlation occurs between flipper length and body mass (r = 0.87), followed by bill length with flipper length (r = 0.66) and body mass (r = 0.60).
+
+![Correlation Matrix](figures/correlation_matrix.png)
+
+### Bill Length vs Bill Depth (Simpson's Paradox)
+Across the entire dataset, bill length and bill depth show a negative correlation (r = -0.24). However, when analyzed separately by species, the correlation becomes positive in all three groups: Adelie (r = +0.39), Gentoo (r = +0.64), and Chinstrap (r = +0.65).
+
+![Bill Length vs Bill Depth - Simpson's Paradox](figures/bill_simpsons_paradox.png)
 
 ## How to Run
 
