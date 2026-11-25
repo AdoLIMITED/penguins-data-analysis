@@ -13,7 +13,7 @@ This project analyzes the Palmer Penguins dataset using Python, Pandas and Matpl
 - Participant 2: Adonis José Pabuena García (contributor) - https://github.com/apabuena-spec
 - Participant 3: Carlos Huertas Charriel (contributor) - https://github.com/CarlosHuertasCharriel
 - Participant 4: María Jimeno González (contributor) - https://github.com/mjimgon
-- Participant 5: [Name and GitHub username]
+- Participant 5: Carlos Hidalgo Luque (contributor) - https://github.com/chl00016
 - Participant 5: [Name and GitHub username]
 - Participant 6: [Name and GitHub username]
 
@@ -48,7 +48,7 @@ Our exploratory data analysis includes:
 6. Histograms, bar charts and scatter plots
 7. Species and sex analysis 
 8. Island distribution and correlation analysis
-9. 
+9. Summary table and sexual dimorphism by species
 
 ## Results
 
@@ -123,9 +123,50 @@ Across the entire dataset, bill length and bill depth show a negative correlatio
 
 ![Bill Length vs Bill Depth - Simpson's Paradox](figures/bill_simpsons_paradox.png)
 
+## Additional Analysis: Summary Table and Sexual Dimorphism
+
+### Summary of the variables
+
+The dataset has 344 rows and 8 columns.
+
+| Numeric variable | Mean | Min | Max | Missing |
+|---|---:|---:|---:|---:|
+| Bill length (mm) | 43.92 | 32.1 | 59.6 | 2 |
+| Bill depth (mm) | 17.15 | 13.1 | 21.5 | 2 |
+| Flipper length (mm) | 200.92 | 172 | 231 | 2 |
+| Body mass (g) | 4201.75 | 2700 | 6300 | 2 |
+
+| Categorical variable | Most frequent value | Count | Missing |
+|---|---|---:|---:|
+| Species | Adelie | 152 | 0 |
+| Island | Biscoe | 168 | 0 |
+| Sex | male | 168 | 11 |
+| Year | 2009 | 120 | 0 |
+
+### Differences between males and females
+
+Mean values for the 333 penguins with known sex and measurements:
+
+| Species | Sex | Bill length (mm) | Bill depth (mm) | Flipper length (mm) | Body mass (g) |
+|---|---|---:|---:|---:|---:|
+| Adelie | female | 37.3 | 17.6 | 187.8 | 3368.8 |
+| Adelie | male | 40.4 | 19.1 | 192.4 | 4043.5 |
+| Chinstrap | female | 46.6 | 17.6 | 191.7 | 3527.2 |
+| Chinstrap | male | 51.1 | 19.3 | 199.9 | 3939.0 |
+| Gentoo | female | 45.6 | 14.2 | 212.7 | 4679.7 |
+| Gentoo | male | 49.5 | 15.7 | 221.5 | 5484.8 |
+
+![Measurements by species and sex](figures/sex_dimorphism.png)
+
+- On average, males are larger than females in all four measurements in all three species.
+- Body mass shows the largest relative difference: 20.0% in Adelie, 17.2% in Gentoo and 11.7% in Chinstrap.
+- Flipper length shows the smallest relative difference (2.5% to 4.3%).
+
 ## How to Run
 
 Install dependencies: pip install -r requirements.txt
 
 main program:  python analysis/exploratory_analysis.py
+
+summary and sexual dimorphism:  python analysis/sex_dimorphism.py
 
