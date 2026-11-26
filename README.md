@@ -15,7 +15,7 @@ This project analyzes the Palmer Penguins dataset using Python, Pandas and Matpl
 - Participant 4: María Jimeno González (contributor) - https://github.com/mjimgon
 - Participant 5: Carlos Hidalgo Luque (contributor) - https://github.com/chl00016
 - Participant 6: Carlos Montoya Peña (contributor) - https://github.com/carlosgmontoya
-- Participant 7: [Name and GitHub username]
+
 
 ## Dataset
 
