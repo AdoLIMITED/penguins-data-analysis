@@ -14,8 +14,8 @@ This project analyzes the Palmer Penguins dataset using Python, Pandas and Matpl
 - Participant 3: Carlos Huertas Charriel (contributor) - https://github.com/CarlosHuertasCharriel
 - Participant 4: María Jimeno González (contributor) - https://github.com/mjimgon
 - Participant 5: Carlos Hidalgo Luque (contributor) - https://github.com/chl00016
-- Participant 5: [Name and GitHub username]
-- Participant 6: [Name and GitHub username]
+- Participant 6: Carlos Montoya Peña (contributor) - https://github.com/carlosgmontoya
+- Participant 7: [Name and GitHub username]
 
 ## Dataset
 
@@ -162,6 +162,26 @@ Mean values for the 333 penguins with known sex and measurements:
 - Body mass shows the largest relative difference: 20.0% in Adelie, 17.2% in Gentoo and 11.7% in Chinstrap.
 - Flipper length shows the smallest relative difference (2.5% to 4.3%).
 
+## Additional Analysis: Evolution Across Years (2007–2009)
+
+This analysis checks whether the sample and the physical measurements changed across the three sampling years.
+
+### Observations per year
+
+![Observations per year](figures/observations_per_year.png)
+
+### Mean measurements by species and year
+
+![Measurements by year](figures/measurements_by_year.png)
+
+### Findings
+
+- The sample is fairly balanced across years (110, 114 and 120 penguins); Chinstrap has the fewest observations in 2008 (18).
+- Flipper length increased in all three species from 2007 to 2009.
+- Body mass remained stable, so differences between years are much smaller than differences between species.
+- Gentoo shows the largest increase in bill length and depth.
+
+
 ## How to Run
 
 Install dependencies: pip install -r requirements.txt
@@ -170,3 +190,4 @@ main program:  python analysis/exploratory_analysis.py
 
 summary and sexual dimorphism:  python analysis/sex_dimorphism.py
 
+year trends:  python analysis/year_trends.py
