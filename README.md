@@ -15,6 +15,7 @@ This project analyzes the Palmer Penguins dataset using Python, Pandas and Matpl
 - Participant 4: María Jimeno González (contributor) - https://github.com/mjimgon
 - Participant 5: Carlos Hidalgo Luque (contributor) - https://github.com/chl00016
 - Participant 6: Carlos Montoya Peña (contributor) - https://github.com/carlosgmontoya
+- Participant 7: René Antonio Rojas Concepción (contributor) - https://github.com/renecubanito
 
 
 ## Dataset
@@ -49,6 +50,7 @@ Our exploratory data analysis includes:
 7. Species and sex analysis 
 8. Island distribution and correlation analysis
 9. Summary table and sexual dimorphism by species
+10. Outliers and bill length/depth ratio by species
 
 ## Results
 
@@ -181,6 +183,22 @@ This analysis checks whether the sample and the physical measurements changed ac
 - Body mass remained stable, so differences between years are much smaller than differences between species.
 - Gentoo shows the largest increase in bill length and depth.
 
+## Additional Analysis: Outliers and Bill Ratio by Species
+
+This analysis detects outliers with the interquartile range (IQR) method for each numeric variable and species, and compares the bill length/depth ratio across species. Only the 342 penguins with complete measurements are used.
+
+### Outliers by species
+
+![Outliers by species](figures/outliers_by_species.png)
+
+### Bill length/depth ratio
+
+![Bill ratio by species](figures/bill_ratio_by_species.png)
+
+### Findings
+
+- Outliers are rare: between 0 and 2 per species and variable (e.g., 2 in Chinstrap body mass and 2 in Adelie flipper length).
+- The bill length/depth ratio separates the three species: Adelie ≈ 2.12, Chinstrap ≈ 2.65 and Gentoo ≈ 3.18.
 
 ## How to Run
 
@@ -191,3 +209,5 @@ main program:  python analysis/exploratory_analysis.py
 summary and sexual dimorphism:  python analysis/sex_dimorphism.py
 
 year trends:  python analysis/year_trends.py
+
+outliers and bill ratio:  python analysis/outliers_bill_ratio.py
